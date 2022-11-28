@@ -9,6 +9,7 @@ r = Repo('.')
 o = r.git.show('HEAD', pretty="", name_only=True)
 print(o)
 # print(dir(repo))
+
 print(repo.untracked_files, 11)
 print(repo.working_dir)
 # python .git/hooks/post-commit.py
