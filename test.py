@@ -14,5 +14,5 @@ print(o)
 print(repo.untracked_files, 11)
 print(repo.working_dir)
 # python .git/hooks/post-commit.py
-print('TEST')
+print('TEST#######')
 
