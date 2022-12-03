@@ -1,14 +1,4 @@
 user:1054
-user:3797
-user:3375
-user:3704
-user:2593
-user:3712
-user:1687
-user:1120
-user:1639
-user:3436
-user:79
 user:1070
 user:961
 user:696
