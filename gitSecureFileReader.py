@@ -48,3 +48,4 @@ class GitSecureFileReader:
         
         if has_key is False:
             print(bcolors.OKGREEN+"YAY!!!!!! No secret key found"+bcolors.ENDC)
+            
