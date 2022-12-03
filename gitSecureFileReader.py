@@ -26,7 +26,6 @@ class GitSecureFileReader:
         except Exception as e:
             print(f"Error opening file {e}")
             return None
-
     def file_reader(self):
         return self.file_opener().readlines()
 
