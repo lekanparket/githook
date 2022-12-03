@@ -6,7 +6,7 @@ print(changedFiles,)
 from git import Repo
 # Suppose the current path is the root of the repository
 r = Repo('.')
-o = r.git.show('HEAD', pretty="", name_only=True)
+o = r.git.show('HEAD',)
 diff = repo.git.diff('HEAD~1..HEAD', name_only=True)
 print(diff, 124)
 print(o)
