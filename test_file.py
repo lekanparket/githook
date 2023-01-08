@@ -1,5 +1,7 @@
 import requests
+
 from selectorlib import Extractor
+
 
 class Temperature:
     """

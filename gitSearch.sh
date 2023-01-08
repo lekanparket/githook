@@ -2,15 +2,22 @@
 
 # Set the repository path
 
-
-repo_path= "/Users/akindele214/Desktop/Dev/gitsecure"
+function get_branch() {
+      git branch --no-color | grep -E '^\*' | awk '{print $2}' \
+        || echo "default_value"
+      # or
+      # git symbolic-ref --short -q HEAD || echo "default_value";
+}
 
 # Change to the repository directory
-cd "$repo_path"
+cd "${pwd}"
 
 # Get the list of changed files
-changed_files=$(git diff --name-only)
-
+# changed_files=$(git diff --name-only)
+# branch = "$(git rev-parse --abbrev-ref HEAD)"
+# echo "$branch"
+branch_name=`get_branch`;
+changed_files=$(git diff --stat --staged origin/"$branch_name")
 # Check if there are any changed files
 if [ -z "$changed_files" ]; then
   echo "No changed files."
