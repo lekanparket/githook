@@ -1,5 +1,6 @@
 from git import Repo
 repo = Repo()
+print(repo.untracked_files, 3)
 changedFiles = [ item.a_path for item in repo.index.diff(None) ]
 print(changedFiles,)
 
