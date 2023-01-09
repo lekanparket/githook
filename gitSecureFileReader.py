@@ -48,3 +48,4 @@ class GitSecureFileReader:
         
         if has_key is False:
             print(bcolors.OKGREEN+f"YAY!!!!!! No secret key found in {self.dir.split('/')[-1]}"+bcolors.ENDC)
+
