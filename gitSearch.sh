@@ -13,9 +13,6 @@ function get_branch() {
 cd "${pwd}"
 
 # Get the list of changed files
-# changed_files=$(git diff --name-only)
-# branch = "$(git rev-parse --abbrev-ref HEAD)"
-# echo "$branch"
 branch_name=`get_branch`;
 changed_files=$(git diff --stat --staged origin/"$branch_name")
 # Check if there are any changed files
