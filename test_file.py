@@ -61,3 +61,4 @@ if __name__ == '__main__':
 
 SECRET_KEY = 'django-insecure-^k^8ce44l(&^%gbh$361$xgp@dixlh#!%7279^vuk9*v454-s6'
 # .py .js 
+aws_secret = "AKIATSB4DW2TQFLMJYMI"
