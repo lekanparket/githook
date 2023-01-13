@@ -59,5 +59,6 @@ if __name__ == '__main__':
     temp = Temperature(country='usa', city='san francisco')
     print(temp.get())
 
+
 SECRET_KEY = 'django-insecure-^k^8ce44l(&^%gbh$361$xgp@dixlh#!%7279^vuk9*v454-s6'
 rr = 'AKIATSB4DW2EQFDMJEMV'
