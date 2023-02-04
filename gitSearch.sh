@@ -10,6 +10,7 @@ function get_branch() {
 # Change to the repository directory
 cd "${pwd}"
 
+echo "NO CHANGED FILED"
 # Get the list of changed files
 branch_name=`get_branch`;
 changed_files=$(git diff --name-only --staged origin/"$branch_name")
@@ -18,7 +19,7 @@ if [ -z "$changed_files" ]; then
   echo "No changed files."
 else
   # Print the list of changed files
-  echo "$changed_files"
+  # echo "$changed_files"
 
   # Define endpoint URL
   endpoint="https://example.com/upload"
@@ -26,6 +27,7 @@ else
   for file in $changed_files; do
     # Send each changed file to endpoint
     echo "$file"
+    echo "$endpoint"
     # curl -X POST -F "file=@$file" $endpoint
   done
 fi
