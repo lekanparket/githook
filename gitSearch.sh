@@ -10,10 +10,12 @@ function get_branch() {
 # Change to the repository directory
 cd "${pwd}"
 
-echo "NO CHANGED FILED"
+echo "NO CHANGED FILED $pwd"
 # Get the list of changed files
 branch_name=`get_branch`;
 changed_files=$(git diff --name-only --staged origin/"$branch_name")
+
+
 # Check if there are any changed files
 if [ -z "$changed_files" ]; then
   echo "No changed files."
