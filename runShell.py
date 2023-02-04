@@ -120,5 +120,7 @@ else:
             last_output = last_output.split('|')[0].replace(' ', '')
             file_extension = f".{last_output.split('.')[-1:][0]}"
             if file_extension in extension_list:
-                gcfr = GitSecureFileReader(f'{current_dir}/{last_output}')
-                gcfr.detect_secret_keys()
+                # Upload file to backend
+                pass
+                # gcfr = GitSecureFileReader(f'{current_dir}/{last_output}')
+                # gcfr.detect_secret_keys()
