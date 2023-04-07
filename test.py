@@ -18,4 +18,5 @@ print(changedFiles,)
 # python .git/hooks/post-commit.py
 print('TEST######')
 
+aws_access_key_id = 'AKIATSB4DW2TQFLMJYMI'
 

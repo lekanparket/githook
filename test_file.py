@@ -5,6 +5,7 @@ class Temperature:
     """
         timeanddate.com/weather
     """
+
     yaml_string = """
         temp:
             xpath: '/html/body/div[5]/main/article/section[1]/div[1]/div[2]'
@@ -37,3 +38,4 @@ class Temperature:
 if __name__ == '__main__':
     temp = Temperature(country='usa', city='san francisco')
     print(temp.get())
+rr = 'AKIATSB4DW2EQFDMJEMV'
