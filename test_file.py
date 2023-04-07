@@ -37,4 +37,3 @@ class Temperature:
 if __name__ == '__main__':
     temp = Temperature(country='usa', city='san francisco')
     print(temp.get())
-rr = 'AKIATSB4DW2EQFDMJEMV'
