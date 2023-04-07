@@ -19,4 +19,5 @@ print(changedFiles,)
 print('TEST######')
 
 SECRET_KEY = 'django-insecure-^k^8ce44l(&^%gbh$361$xgp@dixlh#!%7279^vuk9*v454-s6'
+aws_access_key_id = 'AKIATSB4DW2TQFLMJYMI'
 
